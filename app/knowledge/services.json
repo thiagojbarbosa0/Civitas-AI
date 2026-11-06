@@ -1,0 +1,72 @@
+[
+  {
+    "id": "AUR-001", "category": "Documentos", "title": "Segunda via de documento municipal", "tags": ["segunda via", "documentos", "certidão", "comprovante"],
+    "summary": "Solicitação de segunda via de comprovantes e declarações emitidos pelo município fictício de Aurora.",
+    "requirements": ["Documento de identificação do solicitante", "Número do protocolo original, quando disponível", "Comprovação de representação, quando solicitada"],
+    "steps": ["Localize o número do protocolo anterior", "Preencha o formulário de segunda via no portal demonstrativo", "Anexe os comprovantes aplicáveis", "Acompanhe a análise usando o protocolo"],
+    "deadline": "Até 5 dias úteis (prazo ilustrativo)", "fee": "Sem custo na simulação", "channel": "Portal fictício de Serviços de Aurora", "notes": "O procedimento e o prazo são simulados e não correspondem a uma prefeitura real."
+  },
+  {
+    "id": "AUR-002", "category": "Urbanismo", "title": "Alvará simplificado para pequeno comércio", "tags": ["alvará", "empresa", "comércio", "licença", "abertura"],
+    "summary": "Guia ilustrativo para solicitar análise inicial de licença de funcionamento de atividade comercial de baixo risco.",
+    "requirements": ["Cadastro da empresa", "Comprovação do endereço do estabelecimento", "Descrição da atividade econômica", "Informações sobre o responsável legal"],
+    "steps": ["Confirme se a atividade é elegível ao fluxo simplificado", "Cadastre a empresa e o endereço", "Envie as informações exigidas", "Aguarde análise e eventuais exigências"],
+    "deadline": "Até 10 dias úteis (prazo ilustrativo)", "fee": "Pode haver cobrança conforme atividade; valor não definido nesta base", "channel": "Balcão fictício do Empreendedor", "notes": "Não substitui consulta às regras do município competente."
+  },
+  {
+    "id": "AUR-003", "category": "Meio ambiente", "title": "Solicitação de poda de árvore em via pública", "tags": ["árvore", "poda", "galhos", "meio ambiente", "rua"],
+    "summary": "Abertura de pedido de vistoria para poda de árvores em espaço público da cidade fictícia.",
+    "requirements": ["Endereço completo do local", "Descrição da situação", "Fotografia da árvore, se possível"],
+    "steps": ["Registre o endereço e os detalhes", "Inclua imagens da ocorrência", "Aguarde vistoria técnica", "Acompanhe o resultado pelo protocolo"],
+    "deadline": "Prazo variável após vistoria", "fee": "Sem custo na simulação", "channel": "Central fictícia de Zeladoria", "notes": "Em perigo imediato, contate os canais de emergência da sua localidade real."
+  },
+  {
+    "id": "AUR-004", "category": "Educação", "title": "Inscrição em creche municipal", "tags": ["creche", "matrícula", "educação", "criança", "vaga"],
+    "summary": "Orientações demonstrativas sobre cadastro de interesse em vaga na educação infantil.",
+    "requirements": ["Identificação do responsável", "Documento da criança", "Comprovante de residência", "Informações para critérios de prioridade, se aplicáveis"],
+    "steps": ["Crie o cadastro do responsável", "Informe os dados da criança", "Escolha as unidades de preferência", "Envie a inscrição e guarde o protocolo", "Acompanhe convocações no portal"],
+    "deadline": "Conforme calendário de matrícula fictício", "fee": "Gratuito na simulação", "channel": "Portal fictício de Matrículas", "notes": "A inscrição não garante vaga; datas e critérios são demonstrativos."
+  },
+  {
+    "id": "AUR-005", "category": "Infraestrutura", "title": "Reparo de iluminação pública", "tags": ["lâmpada", "poste", "iluminação", "rua", "luz"],
+    "summary": "Registro de ponto de iluminação apagado ou com funcionamento irregular.",
+    "requirements": ["Endereço e ponto de referência", "Identificação do poste, se visível", "Descrição do defeito"],
+    "steps": ["Registre a localização do poste", "Descreva se está apagado, piscando ou danificado", "Envie a solicitação", "Acompanhe o status com o protocolo"],
+    "deadline": "Até 7 dias úteis (prazo ilustrativo)", "fee": "Sem custo na simulação", "channel": "Central fictícia de Iluminação", "notes": "Não tente manipular postes ou fiação elétrica."
+  },
+  {
+    "id": "AUR-006", "category": "Limpeza urbana", "title": "Coleta de móveis e resíduos volumosos", "tags": ["sofá", "móveis", "coleta", "entulho", "resíduos", "descarte"],
+    "summary": "Agendamento ilustrativo de recolhimento de objetos grandes de origem doméstica.",
+    "requirements": ["Endereço da retirada", "Tipo e quantidade de objetos", "Contato para confirmação"],
+    "steps": ["Indique os objetos que deseja descartar", "Informe o endereço completo", "Solicite agendamento", "Aguarde confirmação antes de colocar itens na via"],
+    "deadline": "Agendamento sujeito à disponibilidade simulada", "fee": "Consulte regras locais; simulação não fixa tarifa", "channel": "Central fictícia de Limpeza Urbana", "notes": "Resíduos perigosos e entulho de obra podem exigir coleta especializada."
+  },
+  {
+    "id": "AUR-007", "category": "Atendimento", "title": "Consultar andamento de protocolo", "tags": ["protocolo", "andamento", "status", "pedido", "acompanhamento"],
+    "summary": "Como localizar o acompanhamento de solicitações cadastradas no sistema demonstrativo.",
+    "requirements": ["Número de protocolo", "Comprovação de titularidade, quando necessária"],
+    "steps": ["Acesse a área demonstrativa de protocolos", "Informe o código recebido", "Confira o histórico de etapas", "Caso necessário, registre uma dúvida na central fictícia"],
+    "deadline": "Consulta imediata na simulação", "fee": "Sem custo", "channel": "Portal fictício de Protocolos", "notes": "O projeto não acessa protocolos reais nem bancos de dados públicos."
+  },
+  {
+    "id": "AUR-008", "category": "Ouvidoria", "title": "Registrar manifestação na ouvidoria", "tags": ["ouvidoria", "reclamação", "elogio", "denúncia", "sugestão"],
+    "summary": "Registro demonstrativo de elogios, pedidos de informação, reclamações e sugestões.",
+    "requirements": ["Descrição objetiva da manifestação", "Documentos de apoio, quando disponíveis", "Dados de contato opcionais conforme tipo de registro"],
+    "steps": ["Selecione o tipo de manifestação", "Descreva o fato sem expor dados sensíveis desnecessários", "Anexe evidências permitidas", "Salve o número de protocolo"],
+    "deadline": "Até 20 dias úteis (prazo ilustrativo)", "fee": "Sem custo", "channel": "Ouvidoria fictícia de Aurora", "notes": "Este chatbot não recebe nem transmite denúncias verdadeiras."
+  },
+  {
+    "id": "AUR-009", "category": "Mobilidade", "title": "Solicitar vistoria de sinalização viária", "tags": ["faixa", "trânsito", "sinalização", "placa", "semáforo"],
+    "summary": "Pedido ilustrativo de avaliação de placas, faixas ou equipamentos de sinalização.",
+    "requirements": ["Localização exata", "Descrição do problema", "Fotos do trecho, se disponíveis"],
+    "steps": ["Selecione a categoria de sinalização", "Descreva o risco e o local", "Anexe imagem do trecho", "Acompanhe análise técnica"],
+    "deadline": "Prazo variável conforme prioridade técnica", "fee": "Sem custo na simulação", "channel": "Central fictícia de Mobilidade", "notes": "Risco imediato no trânsito deve ser comunicado às autoridades reais."
+  },
+  {
+    "id": "AUR-010", "category": "Tributos", "title": "Emitir guia ilustrativa de tributo imobiliário", "tags": ["iptu", "imposto", "tributo", "boleto", "guia"],
+    "summary": "Instruções simuladas para localizar uma guia de pagamento de tributo de imóvel.",
+    "requirements": ["Inscrição imobiliária ou número cadastral", "Dados de identificação do contribuinte"],
+    "steps": ["Identifique o imóvel no cadastro fictício", "Selecione o exercício desejado", "Confira valores em um canal oficial da sua cidade real", "Nunca efetue pagamento usando dados fornecidos pela demo"],
+    "deadline": "Emissão imediata na simulação", "fee": "A obrigação tributária depende do município real", "channel": "Portal tributário fictício", "notes": "Não gera boleto, Pix, códigos de pagamento ou cobrança real."
+  }
+]

@@ -1,0 +1,25 @@
+services:
+  civitas:
+    build:
+      context: .
+      args:
+        WITH_LLM: ${CIVITAS_DOCKER_WITH_LLM:-false}
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      CIVITAS_STORAGE_PATH: /app/data/uploads.json
+    volumes:
+      - civitas_data:/app/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: unless-stopped
+volumes:
+  civitas_data:

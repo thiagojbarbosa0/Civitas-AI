@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Civitas AI: plataforma demonstrativa GovTech multiagente, RAG, tool calling e observabilidade.">
+  <title>Civitas AI — GovTech Intelligence</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <a href="#overview" class="brand" aria-label="Página inicial Civitas AI">
+        <div class="brand-symbol"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m16 2 13 7.3v13.4L16 30 3 22.7V9.3L16 2Z" stroke="currentColor" stroke-width="1.8"/><path d="m9 18 5-7 3 4 6-6M10 22h13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="brand-name">civitas<span>.ai</span><small>GOVTECH INTELLIGENCE</small></div>
+      </a>
+      <div class="workspace-label"><span class="space-avatar">A</span><div><strong>Workspace Aurora</strong><small>Ambiente demonstrativo</small></div><span class="chevron">⌄</span></div>
+      <div class="nav-heading">PLATAFORMA</div>
+      <nav aria-label="Navegação principal">
+        <button class="nav-item active" data-page="overview"><span class="nav-icon">◫</span> Visão geral</button>
+        <button class="nav-item" data-page="assistant"><span class="nav-icon">✧</span> Assistente IA <span class="nav-count">4</span></button>
+        <button class="nav-item" data-page="knowledge"><span class="nav-icon">▤</span> Base de conhecimento</button>
+        <button class="nav-item" data-page="evaluation"><span class="nav-icon">◈</span> Avaliações</button>
+        <button class="nav-item" data-page="architecture"><span class="nav-icon">⬡</span> Arquitetura</button>
+      </nav>
+      <div class="nav-heading second-heading">DESENVOLVIMENTO</div>
+      <nav aria-label="Ferramentas do desenvolvedor">
+        <a class="nav-item" href="/api/docs" target="_blank" rel="noopener"><span class="nav-icon">{ }</span> API Explorer <span class="external">↗</span></a>
+        <a class="nav-item" href="/metrics" target="_blank" rel="noopener"><span class="nav-icon">⌁</span> Métricas <span class="external">↗</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note"><span class="note-icon">◉</span><div><strong>Ambiente seguro</strong><small>Dados inteiramente fictícios. Sem integrações governamentais.</small></div></div>
+        <div class="profile"><div class="profile-avatar">C</div><div><strong>Civitas Lab</strong><small>Developer workspace</small></div><span class="profile-gear">⌘</span></div>
+      </div>
+    </aside>
+    <main class="main" id="main-content" tabindex="-1">
+      <header class="topbar">
+        <div class="breadcrumb"><button class="mobile-menu" id="mobile-menu" aria-label="Abrir menu">☰</button><span>Workspace Aurora</span><span class="sep">/</span><strong id="crumb">Visão geral</strong></div>
+        <div class="top-actions"><span class="network"><span class="status-dot"></span><span id="top-status">Conectando…</span></span><span class="divider-v"></span><span class="tag tag-purple">v1.3.1</span><span class="avatar">CL</span></div>
+      </header>
+      <div class="content">
+        <section class="page active" id="page-overview" aria-label="Visão geral">
+          <div class="page-heading"><div><div class="eyebrow">VISÃO GERAL <span> / PLATFORM OVERVIEW</span></div><h1>Inteligência para serviços <em>públicos.</em></h1><p>Uma plataforma multiagente que transforma conhecimento em orientação contextualizada, rastreável e acessível.</p></div><button class="btn btn-primary" data-go="assistant">✧ &nbsp; Abrir assistente <span>↗</span></button></div>
+          <div class="notice"><span class="notice-star">✦</span><p><strong>Sandbox GovTech.</strong> Você está explorando um ambiente fictício. Todos os procedimentos da cidade de Aurora são exemplos para fins de demonstração técnica.</p><span class="notice-badge">DEMO</span></div>
+          <div class="stat-grid">
+            <article class="stat-card"><div class="stat-top">Documentos indexados <span class="stat-icon violet">▤</span></div><div class="stat-value" id="stat-docs">—</div><div class="stat-foot"><span class="small-green">● Disponível</span> Base vetorizável</div></article>
+            <article class="stat-card"><div class="stat-top">Consultas processadas <span class="stat-icon cyan">↗</span></div><div class="stat-value" id="stat-queries">—</div><div class="stat-foot"><span class="small-green">● Em tempo real</span> Sessão atual</div></article>
+            <article class="stat-card"><div class="stat-top">Agentes especializados <span class="stat-icon orange">✧</span></div><div class="stat-value">04</div><div class="stat-foot"><span class="small-green">● Implementados</span> Pipeline de execução</div></article>
+            <article class="stat-card"><div class="stat-top">Tempo médio de resposta <span class="stat-icon pink">◷</span></div><div class="stat-value"><span id="stat-latency">—</span><small>ms</small></div><div class="stat-foot">Métrica da execução <span class="muted">local</span></div></article>
+          </div>
+          <div class="two-col">
+            <article class="panel pipeline-panel"><div class="panel-head"><div><span class="eyebrow">ORQUESTRAÇÃO</span><h2>Pipeline de agentes</h2><p>Quatro etapas especializadas em um fluxo verificável.</p></div><span class="tag tag-green">● Operacional</span></div>
+              <div class="pipeline">
+                <div class="pipe-row"><span class="pipe-number">01</span><span class="pipe-icon vio">⌘</span><div class="pipe-body"><strong>Roteador de intenções</strong><p>Entende o contexto e seleciona o fluxo</p></div><span class="pipe-pill">ROUTING</span></div>
+                <div class="pipe-connector"></div>
+                <div class="pipe-row"><span class="pipe-number">02</span><span class="pipe-icon blu">◎</span><div class="pipe-body"><strong>Pesquisador RAG</strong><p>Busca e ordena evidências documentais</p></div><span class="pipe-pill">RETRIEVAL</span></div>
+                <div class="pipe-connector"></div>
+                <div class="pipe-row"><span class="pipe-number">03</span><span class="pipe-icon orang">✳</span><div class="pipe-body"><strong>Agente especialista</strong><p>Gera orientação; utiliza ferramentas autorizadas</p></div><span class="pipe-pill">GENERATION</span></div>
+                <div class="pipe-connector"></div>
+                <div class="pipe-row"><span class="pipe-number">04</span><span class="pipe-icon gre">◇</span><div class="pipe-body"><strong>Auditoria e proveniência</strong><p>Anexa referências e sinaliza limites</p></div><span class="pipe-pill">GUARDRAIL</span></div>
+              </div>
+            </article>
+            <article class="panel starter-panel"><div class="panel-head"><div><span class="eyebrow">EXPERIMENTE</span><h2>Comece uma conversa</h2><p>Perguntas simuladas para explorar o sistema.</p></div><span class="tag tag-soft">EXEMPLOS</span></div>
+              <div class="suggested-list" id="overview-prompts"></div>
+              <div class="model-strip"><span class="model-logo">✧</span><div><strong id="model-name">Demo local</strong><small id="model-desc">Respostas sem custos de inferência</small></div><span class="tag tag-purple" id="mode-tag">DEMO</span></div>
+            </article>
+          </div>
+          <div class="bottom-strip"><span class="strip-symbol">⬡</span><div><strong>Projetado com rastreabilidade desde o início</strong><p>FastAPI · RAG · Tool Calling · LangChain · Evidências · Testes automatizados</p></div><button class="btn btn-outline" data-go="architecture">Explorar arquitetura ↗</button></div>
+        </section>
+
+        <section class="page" id="page-assistant" aria-label="Assistente IA">
+          <div class="page-heading compact"><div><div class="eyebrow">CENTRAL DE INTELIGÊNCIA</div><h1>Assistente <em>Civitas.</em></h1><p>Converse com agentes especializados, consulte fontes e acompanhe a execução.</p></div><span class="tag tag-green">● Pipeline online</span></div>
+          <div class="chat-layout">
+            <div class="panel chat-shell">
+              <div class="chat-toolbar"><div class="chat-title"><span class="agent-avatar">✧</span><div><strong>Assistente de serviços</strong><small><span class="status-dot"></span> Pipeline de quatro etapas</small></div></div><button id="clear-chat" class="btn btn-ghost">↺ Limpar conversa</button></div>
+              <div class="chat-messages" id="chat-messages" aria-live="polite"><div class="welcome"><div class="welcome-symbol">✳</div><h2>Como posso ajudar?</h2><p>Explore os serviços públicos fictícios de Aurora. Cada resposta apresenta as fontes recuperadas e a trilha dos agentes.</p><div id="chat-prompts" class="prompt-chips"></div></div></div>
+              <form id="chat-form" class="chat-form"><label for="chat-input" class="sr-only">Sua pergunta</label><textarea id="chat-input" rows="2" maxlength="1000" placeholder="Pergunte sobre serviços, documentos, prazos ou procedimentos..." required></textarea><div class="composer-bottom"><div><span class="composer-dot">●</span> <span id="composer-label">RAG conectado à base Aurora</span></div><button type="submit" id="send-chat" class="btn btn-primary">Enviar <span>↗</span></button></div></form>
+              <div class="chat-disclaimer">Protótipo educacional • Não envie informações pessoais ou sigilosas</div>
+            </div>
+            <aside class="assistant-aside"><article class="panel aside-card"><div class="eyebrow">FONTES CONSULTADAS</div><h3>Documentos de referência</h3><div id="source-list" class="source-list"><div class="empty-side">As fontes aparecerão após a primeira consulta.</div></div></article><article class="panel aside-card"><div class="eyebrow">EXECUÇÃO</div><h3>Trilha de agentes</h3><div id="trace-list" class="trace-list"><div class="empty-side">A trilha de execução aparecerá aqui.</div></div></article></aside>
+          </div>
+        </section>
+
+        <section class="page" id="page-knowledge" aria-label="Base de conhecimento">
+          <div class="page-heading compact"><div><div class="eyebrow">RETRIEVAL ENGINE</div><h1>Base de <em>conhecimento.</em></h1><p>Explore o catálogo indexado de serviços fictícios e suas fontes estruturadas.</p></div><span class="tag tag-purple">RAG READY</span></div>
+          <div class="panel knowledge-panel"><div class="knowledge-bar"><div><h2>Catálogo de serviços</h2><p id="knowledge-count">Carregando documentos…</p></div><div class="input-search"><span>⌕</span><input id="search-services" type="search" maxlength="150" placeholder="Buscar documentos..." aria-label="Buscar serviços"></div></div><div class="table-wrap"><table class="data-table"><thead><tr><th>IDENTIFICADOR</th><th>SERVIÇO</th><th>CATEGORIA</th><th></th></tr></thead><tbody id="service-tbody"></tbody></table></div></div>
+          <div id="detail-panel" class="panel detail-panel" hidden><div class="detail-head"><div><div class="eyebrow">FONTE DOCUMENTAL</div><h2 id="detail-title"></h2></div><button class="btn btn-ghost" id="close-detail">Fechar ✕</button></div><p id="detail-summary"></p><div class="detail-cols"><div><h3>Documentos necessários</h3><ul id="detail-reqs"></ul></div><div><h3>Etapas do processo</h3><ol id="detail-steps"></ol></div></div><div class="detail-meta" id="detail-meta"></div></div>
+          <details class="panel admin-panel"><summary>⌘ &nbsp; Ingestão autenticada de documentos <span class="tag tag-soft">ADMIN API</span></summary><p>Adicione conteúdo de demonstração de forma controlada. Necessita <code>CIVITAS_ADMIN_TOKEN</code> no servidor. O token não é salvo no navegador.</p><form id="ingest-form"><div class="admin-grid"><label>Token de administrador<input type="password" id="admin-token" required autocomplete="off" placeholder="Bearer token local"></label><label>ID (prefixo USR-)<input id="doc-id" required placeholder="USR-EXEMPLO"></label><label>Título<input id="doc-title" required minlength="5" placeholder="Solicitação demonstrativa"></label><label>Categoria<input id="doc-category" required minlength="3" placeholder="Atendimento"></label></div><label>Resumo<textarea id="doc-summary" required minlength="20" placeholder="Descreva o documento fictício de referência..."></textarea></label><button type="submit" class="btn btn-primary">Indexar documento ↗</button><div id="ingest-feedback" role="status"></div></form></details>
+        </section>
+
+        <section class="page" id="page-evaluation" aria-label="Avaliações">
+          <div class="page-heading compact"><div><div class="eyebrow">QUALITY & EVALUATION</div><h1>Avaliação <em>mensurável.</em></h1><p>Execute um conjunto fixo de consultas e meça a qualidade da recuperação documental.</p></div><button class="btn btn-primary" id="run-eval">▶ &nbsp; Executar avaliação</button></div>
+          <div class="notice"><span class="notice-star">◎</span><p><strong>Escopo da métrica:</strong> Hit@1/Hit@3 medem recuperação. Abstenção mede rejeição de perguntas fora do escopo. Nenhuma dessas métricas comprova factualidade de um LLM.</p></div>
+          <div class="eval-grid"><div class="stat-card"><div class="stat-top">Hit@1 <span class="stat-icon violet">◎</span></div><div class="stat-value" id="eval-top1">—</div><div class="stat-foot">Fonte correta na primeira posição</div></div><div class="stat-card"><div class="stat-top">Hit@3 <span class="stat-icon cyan">◈</span></div><div class="stat-value" id="eval-top3">—</div><div class="stat-foot">Fonte correta nas três primeiras</div></div><div class="stat-card"><div class="stat-top">Casos avaliados <span class="stat-icon orange">▤</span></div><div class="stat-value" id="eval-total">—</div><div class="stat-foot">Perguntas positivas</div></div><div class="stat-card"><div class="stat-top">Abstenção <span class="stat-icon pink">⊘</span></div><div class="stat-value" id="eval-abstention">—</div><div class="stat-foot">Consultas fora do escopo</div></div></div>
+          <div class="panel knowledge-panel"><div class="knowledge-bar"><div><h2>Resultados por caso</h2><p>Testes com respostas esperadas conhecidas</p></div><span id="eval-state" class="tag tag-soft">AINDA NÃO EXECUTADO</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>CONSULTA</th><th>ESPERADO</th><th>RANKING</th><th>RESULTADO</th></tr></thead><tbody id="eval-results"><tr><td colspan="4" class="blank-row">Execute a avaliação para visualizar resultados.</td></tr></tbody></table></div></div>
+        </section>
+
+        <section class="page" id="page-architecture" aria-label="Arquitetura">
+          <div class="page-heading compact"><div><div class="eyebrow">SYSTEM DESIGN</div><h1>Arquitetura <em>modular.</em></h1><p>Fluxos desacoplados, ferramentas restritas e rastreabilidade de cada interação.</p></div><a href="/api/docs" target="_blank" class="btn btn-outline">Documentação OpenAPI ↗</a></div>
+          <div class="panel diagram-panel"><div class="panel-head"><div><span class="eyebrow">HIGH-LEVEL ARCHITECTURE</span><h2>Mapa de componentes</h2><p>Separação entre apresentação, aplicação, recuperação, inferência e dados.</p></div><span class="tag tag-soft">v1.3</span></div><div class="arch-flow"><div class="arch-node arch-large"><span>◫</span><strong>Web Console</strong><small>HTML / CSS / JavaScript</small></div><div class="arch-arrow">↓ <small>REST / JSON</small></div><div class="arch-node arch-large api-node"><span>⬡</span><strong>FastAPI Gateway</strong><small>Validação · Limites · OpenAPI</small></div><div class="arch-arrow">↓</div><div class="arch-node-group"><div class="arch-node"><span>⌘</span><strong>Intent Router</strong><small>Classificação</small></div><div class="arch-node"><span>◎</span><strong>RAG Retriever</strong><small>BM25 / Embeddings</small></div><div class="arch-node"><span>✧</span><strong>LLM Specialist</strong><small>LangChain · Tools</small></div><div class="arch-node"><span>◇</span><strong>Evidence Agent</strong><small>Fontes · Traço</small></div></div><div class="arch-arrow">↓</div><div class="arch-node-group bottom-nodes"><div class="arch-node"><span>▤</span><strong>Knowledge Base</strong><small>JSON / Ingestão</small></div><div class="arch-node"><span>✳</span><strong>Model Providers</strong><small>OpenAI / Mistral / Ollama</small></div><div class="arch-node"><span>↗</span><strong>Observability</strong><small>Metrics / Evals</small></div></div></div></div>
+          <div class="architecture-grid"><div class="panel architecture-feature"><div class="feature-head"><span class="feature-icon vio">◎</span><span>RETRIEVAL</span></div><h3>RAG com evidências</h3><p>BM25 operacional sem dependências pesadas, com opção de embeddings multilíngues reais e fusão híbrida.</p></div><div class="panel architecture-feature"><div class="feature-head"><span class="feature-icon blu">⌘</span><span>AGENTIC AI</span></div><h3>Tool calling autorizado</h3><p>Consulta de documentos e cálculo ilustrativo de dias úteis, sem permissões de escrita concedidas ao modelo.</p></div><div class="panel architecture-feature"><div class="feature-head"><span class="feature-icon gre">◇</span><span>SAFETY</span></div><h3>Segurança por design</h3><p>Validação de entrada, tokens de administração, limites por IP e isolamento de fontes como dados não confiáveis.</p></div></div>
+        </section>
+      </div>
+      <footer class="footer"><span>© 2026 Civitas AI <span class="footer-dot">·</span> Projeto demonstrativo de portfólio</span><span><span class="status-dot"></span> Ambiente de desenvolvimento <span class="footer-dot">·</span> API v1</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

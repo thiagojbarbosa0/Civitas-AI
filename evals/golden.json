@@ -1,0 +1,17 @@
+[
+ {"question":"Como consigo segunda via de documento municipal?", "expected_id":"AUR-001"},
+ {"question":"Quero abrir um pequeno comércio e obter alvará", "expected_id":"AUR-002"},
+ {"question":"Preciso de uma poda de árvore com galhos na rua", "expected_id":"AUR-003"},
+ {"question":"Quais documentos necessários para matrícula na creche?", "expected_id":"AUR-004"},
+ {"question":"O poste com lâmpada está apagado, quero reparar iluminação pública", "expected_id":"AUR-005"},
+ {"question":"Como descartar sofá e móveis grandes pela coleta?", "expected_id":"AUR-006"},
+ {"question":"Consultar andamento e status de protocolo", "expected_id":"AUR-007"},
+ {"question":"Quero registrar reclamação na ouvidoria", "expected_id":"AUR-008"},
+ {"question":"Há placa de trânsito e faixa sem sinalização", "expected_id":"AUR-009"},
+ {"question":"Como emitir boleto guia de IPTU do imóvel?", "expected_id":"AUR-010"},
+ {"question":"Qual prazo de reparo de iluminação pública?", "expected_id":"AUR-005"},
+ {"question":"Quanto custa obter alvará para comércio?", "expected_id":"AUR-002"},
+ {"question":"Quais documentos para inscrição da creche municipal?", "expected_id":"AUR-004"},
+ {"question":"Solicitar vistoria de semáforo quebrado", "expected_id":"AUR-009"},
+ {"question":"Como faço para reclamar sobre um serviço na ouvidoria?", "expected_id":"AUR-008"}
+]
